@@ -33,7 +33,6 @@ class Grep {
 
                 val lineList: List<String> = filePath.readLines()
 
-
                 for (i in 0 until lineList.count()) {
                     if (lineList[i].contains(subString)) {
                         foundStringNumber = i + 1
