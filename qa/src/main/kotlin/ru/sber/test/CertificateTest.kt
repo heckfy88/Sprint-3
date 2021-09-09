@@ -21,8 +21,6 @@ internal class CertificateTest {
     @Test
     @DisplayName("certificateRequest is of a proper type")
     fun isCertificateRequestTest() {
-
-        // result
         assertEquals(certificateRequest, certificate.certificateRequest)
 
     }
@@ -30,8 +28,6 @@ internal class CertificateTest {
     @Test
     @DisplayName("processedBy is of a proper type")
     fun isProcessedByTest() {
-
-        // result
         assertEquals(processedBy, certificate.processedBy)
 
     }
@@ -39,8 +35,6 @@ internal class CertificateTest {
     @Test
     @DisplayName("data is of a proper type")
     fun isDataTest() {
-
-        // result
         assertEquals(data, certificate.data)
 
     }
