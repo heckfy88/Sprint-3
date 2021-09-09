@@ -39,8 +39,8 @@ internal class CertificateRequestTest {
 
         val certificate = certificateRequest.process(hrEmployeeNumber)
         assertEquals(certificate.data, dataArr)
-        assertEquals(certificate.processedBy, hrEmployeeNumber)
         assertEquals(certificate.certificateRequest, certificateRequest)
+        assertEquals(certificate.processedBy, hrEmployeeNumber)
     }
 
 
