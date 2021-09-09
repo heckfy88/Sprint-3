@@ -20,18 +20,14 @@ internal class ScannerTest {
 
     @Test
     fun getScannerDataTest() {
-        // given
         every { Random.nextLong(5000L, 15000L) } returns 5000L
-        // result
         assertDoesNotThrow({ Scanner.getScanData() })
         assertEquals(Scanner.getScanData().size, 100)
     }
 
     @Test
     fun scannerTimeoutExceptionTest() {
-        // given
         every { Random.nextLong(5000L, 15000L) } returns 10001L
-        // result
         assertThrows(ScanTimeoutException::class.java, { Scanner.getScanData() })
     }
 
