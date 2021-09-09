@@ -17,6 +17,7 @@ internal class CertificateRequestTest {
     private val certificateType = mockk<CertificateType>()
     private val hrEmployeeNumber: Long = 50L
     private val certificateRequest = CertificateRequest(employeeNumber, certificateType)
+    private val dataArr: ByteArray = byteArrayOf(0,10,100)
 
 
     @Test
