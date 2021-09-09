@@ -31,10 +31,9 @@ internal class CertificateRequestTest {
 
     @Test
     fun certificateRequestTest() {
-
         assertNotNull(certificateRequest.process(hrEmployeeNumber))
-
         mockkObject(Random)
+        
         every { Random.nextLong(5000L, 15000L) } returns 10000L
         every { Random.nextBytes(3) } returns dataArr
 
